@@ -12,16 +12,16 @@ In a real world scenario, we can use just 1 app like Synapse
 ## Azure storage account
 
 After creating the proper subscription and resource group (parent folder for all azure tools in a project), a container is needed to store dataset
-![Creating Container for the data](C:\Users\qtranhu\Documents\DA\tokyo-olympic-DE\azure-storage.png)
-![Creating a Folder Directory inside a Container](C:\Users\qtranhu\Documents\DA\tokyo-olympic-DE\storage-container.png)
+![Creating Container for the data](https://github.com/danny-213/tokyo-lympic-DE/blob/main/azure-storage.png)
+![Creating a Folder Directory inside a Container](https://github.com/danny-213/tokyo-lympic-DE/blob/main/storage-container.png)
 \*Upload a random file as place holder cus it seems it doesnt accept an empty folder
 
 ## Azure Data Factory
 
 Create a new pipeline, then a copy action inside that pipeline
-![Setup copy action with source](C:\Users\qtranhu\Documents\DA\tokyo-olympic-DE\pipeline-task.png)
-![Connect Source on Github HTTP GET Request](C:\Users\qtranhu\Documents\DA\tokyo-olympic-DE\pipeline-task2.png) Set the Authentication type to anonymous (cus no credential needed to make the request)
-![Connect Blob storage service with the Sink tab](C:\Users\qtranhu\Documents\DA\tokyo-olympic-DE\pipeline-task1.png) => create a link service under your subscription
+![Setup copy action with source](https://github.com/danny-213/tokyo-lympic-DE/blob/main/pipeline-task.png)
+![Connect Source on Github HTTP GET Request](https://github.com/danny-213/tokyo-lympic-DE/blob/main/pipeline-task2.png) Set the Authentication type to anonymous (cus no credential needed to make the request)
+![Connect Blob storage service with the Sink tab](https://github.com/danny-213/tokyo-lympic-DE/blob/main/pipeline-task1.png) => create a link service under your subscription
 ==> None Import schema for both Source & Sink
 
 ## Transform the data with Azure Databricks
@@ -50,12 +50,12 @@ dbutils.fs.mount(
 2. Make an App Registration & Giving Access to the app by going to Access Control in the blob container
 
    a. Create an App Registration with client, tenant ID and secret key
-   ![Setup App Registration](C:\Users\qtranhu\Documents\DA\tokyo-olympic-DE\app-reg.png)
+   ![Setup App Registration](https://github.com/danny-213/tokyo-lympic-DE/blob/main/app-reg.png)
 
    b. Create Role for the App to access Blob
-   ![Access control to the blob by app](C:\Users\qtranhu\Documents\DA\tokyo-olympic-DE\blob-access.png)
-   ![In the Blob Container, set member for Blob Contributor Assigned Role](C:\Users\qtranhu\Documents\DA\tokyo-olympic-DE\db-accessblob.png)
-   ![Role as Blob contributor](C:\Users\qtranhu\Documents\DA\tokyo-olympic-DE\blob-access.png)
+   ![Access control to the blob by app](https://github.com/danny-213/tokyo-lympic-DE/blob/main/blob-access.png)
+   ![In the Blob Container, set member for Blob Contributor Assigned Role](https://github.com/danny-213/tokyo-lympic-DE/blob/main/db-accessblob.png)
+   ![Role as Blob contributor](https://github.com/danny-213/tokyo-lympic-DE/blob/main/blob-access.png)
 
    c. Mount with the App authentication info
 
@@ -79,15 +79,15 @@ dbutils.fs.mount(
 
 ### Ease of schema setup
 
-![Connect to the blob storage and set schema](C:\Users\qtranhu\Documents\DA\tokyo-olympic-DE\synapse-schema.png)
+![Connect to the blob storage and set schema](https://github.com/danny-213/tokyo-lympic-DE/blob/main/synapse-schema.png)
 
 ## Connect Power BI with Blob Storage Container / Datalake
 
 ### Anonymous Read
 
-![Make the data public for any Power BI account to access](C:\Users\qtranhu\Documents\DA\tokyo-olympic-DE\powerbi-access.png)
+![Make the data public for any Power BI account to access](https://github.com/danny-213/tokyo-lympic-DE/blob/main/powerbi-access.png)
 
 ### Manage user access
 
-![Get Endpoints in Setting](C:\Users\qtranhu\Documents\DA\tokyo-olympic-DE\powerbi-connect.png)
-![Get Account Key in Security & Networking](C:\Users\qtranhu\Documents\DA\tokyo-olympic-DE\access-key.png)
+![Get Endpoints in Setting](https://github.com/danny-213/tokyo-lympic-DE/blob/main/powerbi-connect.png)
+![Get Account Key in Security & Networking](https://github.com/danny-213/tokyo-lympic-DE/blob/main/access-key.png)
